@@ -23,33 +23,47 @@
 </svelte:head> -->
 
 <div class="content flex flex-col items-center">
-	<div class=" max-w-7xl mt-24">
+	<div class=" max-w-7xl">
 		<PageTitle title="Our services" />
-		<h2 class="text-6xl  max-w-screen-sm font-syne text-white">
+		<h2 class="text-6xl  max-w-screen-sm font-syne text-dark-900">
 			Some real cool f*cking text here about services.
 		</h2>
 		<div class="flex flex-wrap mt-24 justify-end">
-			<h4 class="text-2xl font-semibold font-syne text-white max-w-sm">
-				We collaborate with business’ in finding their needs and creating solutions. Doing that with
-				great knowledge and persistence.
+			<h4 class="text-2xl font-semibold font-syne text-dark-700 max-w-sm">
+				We are involved with custom software development. Oh yes we are. We do other things too.
 			</h4>
-			<div class="flex flex-end">
-				<p>
-					We collaborate with busniess’ in finding their needs and creating solutions. Doing that
-					with great knowledge and persistence.
-				</p>
-			</div>
-		</div>
-		<div class="py-24 border-t border-darkBlue-700 mt-32">
-			<h4>Partnered with the best</h4>
-			<div />
+			<Box
+				number="01"
+				title="Frontend development"
+				description="We build websites and web applications"
+			/>
+			<Box
+				number="02"
+				title="Backend development"
+				description="We build websites and web applications"
+			/>
+			<Box
+				number="03"
+				title="Devops infrastructure"
+				description="We build websites and web applications"
+			/>
+			<Box
+				number="04"
+				title="Testing &
+	Automation"
+				description="We build websites and web applications"
+			/>
+			<Box number="05" title="Design" description="We build websites and web applications" />
 		</div>
 	</div>
+</div>
+<div class="flex justify-center">
+	<img src={Frame} alt="process frame" />
 </div>
 
 <style>
 	.content {
-		background-color: #162b61;
-		color: white;
+		background-color: #f8fbfc;
+		padding: 150px 0;
 	}
 </style>

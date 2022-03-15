@@ -63,8 +63,37 @@ module.exports = {
 					800: '#192439',
 					900: '#0F1829'
 				}
+			},
+
+			fontFamily: {
+				inter: ['"Inter"', 'cursive'],
+				syne: ['"Syne"', 'sans-serif']
 			}
 		}
 	},
-	plugins: []
+	extend: {
+		typography: (theme) => ({
+			DEFAULT: {
+				css: {
+					color: theme('colors.purple.700'),
+					h2: {
+						color: theme('colors.purple.800')
+					},
+					h3: {
+						color: theme('colors.purple.800')
+					},
+					strong: {
+						color: theme('colors.purple.800')
+					},
+					a: {
+						color: theme('colors.green.500'),
+						'&:hover': {
+							color: theme('colors.green.600')
+						}
+					}
+				}
+			}
+		})
+	},
+	plugins: [require('@tailwindcss/typography')]
 };
